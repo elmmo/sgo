@@ -1,0 +1,17 @@
+{
+    "name": "Hello",
+    "version": "1.0",
+    "description": "Says hello to Google",
+    "permissions": ["tabs", "cookies", "*://*.whitworth.edu/*"],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://login.whitworth.edu/*"],
+        "js": ["hello.js"]
+      }
+    ],
+    "manifest_version": 2
+  }
