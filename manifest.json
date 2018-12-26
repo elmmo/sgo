@@ -1,7 +1,7 @@
 {
-    "name": "Hello",
+    "name": "sgo",
     "version": "1.0",
-    "description": "Says hello to Google",
+    "description": "Fixes auth issues for Whitworth login",
     "permissions": ["tabs", "cookies", "*://*.whitworth.edu/*"],
     "background": {
         "scripts": ["background.js"],
@@ -9,7 +9,7 @@
     },
     "content_scripts": [
       {
-        "matches": ["*://login.whitworth.edu/*"],
+        "matches": ["*://login.whitworth.edu/*", "*://blackboard.whitworth.edu/*"],
         "js": ["hello.js"]
       }
     ],
