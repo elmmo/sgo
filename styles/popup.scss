@@ -1,6 +1,25 @@
-button {
-    height: 30px;
-    width: 30px;
-    outline: none;
-    background-color: red; 
+.prof {
+    position: absolute; 
+    left: 50px; 
+    &:before {
+        content: ""; 
+        position: absolute; 
+        background-color: red; 
+        width: 8px; 
+        height: 8px; 
+        border-radius: 360px; 
+        box-shadow: 0 0 10px #FF0000,
+                    0 0 2px #000000;
+        left: -16px; 
+        top: 3px; 
+    }
+}
+#container {
+    width: 200px; 
+    height: 200px; 
+    span {
+        display: block; 
+        width: 20px; 
+        height: 20px; 
+    }
 }
