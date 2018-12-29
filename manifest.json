@@ -3,7 +3,7 @@
     "version": "1.0",
     "description": "Fixes auth issues and presents office hours",
     "permissions": ["tabs", "cookies", "*://*.whitworth.edu/*"],
-    "page_action": {
+    "browser_action": {
       "default_popup": "popup.html"
     },
     "background": {
