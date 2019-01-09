@@ -2,18 +2,18 @@
   <html>
     <head>
         <link rel="stylesheet" href="../styles/options.css">
-        <link rel="stylesheet" href="../timepicker/dist/timepicker.min.css">
+        <link rel="stylesheet" href="wickedpicker/dist/wickedpicker.min.css">
     </head>
     <body>
-        <p>Here</p>
         <form action="">
             First name: <input type="text" name="FirstName" value="Mickey"><br>
             Last name: <input type="text" name="LastName" value="Mouse"><br>
-            <input type="text" name="timepicker" data-toggle="timepicker">
+            Start Time: <input type="text" id="timepicker-stat" name="timepicker-start" class="timepicker"></br>
+            End Time: <input type="text" id="timepicker-end" name="timepicker-end" class="timepicker"></br>
             <input type="submit" value="Submit">
         </form> 
     </body>
     <script src="../jquery-3.3.1.js"></script>
-    <script src="../timepicker/dist/timepicker.min.js"></script>
+    <script type="text/javascript" src="wickedpicker/dist/wickedpicker.min.js"></script>
     <script src="options.js"></script>
   </html>
