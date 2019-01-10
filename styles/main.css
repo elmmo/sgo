@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Hind");
+.container #addProf input[type=submit]:disabled:hover, .container #addProf input[type=submit] {
+  color: white;
+  background-color: #004772;
+  border: 2pt solid #004772;
+}
+
+.container #addProf input[type=submit]:hover {
+  color: #004772;
+  background-color: transparent;
+  border: 2pt solid #004772;
+}
+
+.container {
+  font-family: "Hind";
+  font-size: 1.4em;
+  font-color: black;
+}
+.container #addProf span {
+  position: relative;
+  left: 1.3em;
+}
+.container #addProf input {
+  padding: 1em;
+  margin: 0.5em;
+  border: 1pt solid #004772;
+  font-family: inherit;
+  font-size: 1em;
+  font-color: black;
+}
+.container #addProf input:focus {
+  outline: 0;
+}
+.container #addProf input[type=submit] {
+  position: relative;
+  left: -0.5em;
+  top: 0.5em;
+}
+.container #addProf input[type=submit]:disabled {
+  opacity: 0.5;
+}
+.container #profiles {
+  margin-top: 1em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+.container #profiles .profile {
+  background-color: #85ff85;
+  padding: 1em;
+  margin: 0.5em;
+}
+
+#container {
+  width: 200px;
+  height: 200px;
+}
+#container span {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+#container span .prof {
+  position: absolute;
+  left: 50px;
+}
+#container span .prof:before {
+  content: "";
+  position: absolute;
+  background-color: red;
+  width: 8px;
+  height: 8px;
+  border-radius: 360px;
+  box-shadow: 0 0 10px #FF0000, 0 0 2px #000000;
+  left: -16px;
+  top: 3px;
+}
+
+.active {
+  background-color: #00d000;
+  box-shadow: 0 0 10px #00d000, 0 0 2px #000000;
+}
+
+.inactive {
+  background-color: red;
+  box-shadow: 0 0 10px #FF0000, 0 0 2px #000000;
+}
+
+/*# sourceMappingURL=main.css.map */

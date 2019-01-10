@@ -1,0 +1,44 @@
+.container {
+    @include font-style("Hind", 1.4em); 
+    #addProf {
+        span {
+          position: relative;
+          left: 1.3em;
+        }
+        input {
+          padding: 1em;
+          margin: 0.5em;
+          border: 1pt solid $shadow-color;
+          @include font-style(inherit, 1em); 
+          &:focus {
+            outline: 0;
+          }
+          &[type="submit"] {
+            position: relative;
+            left: -0.5em;
+            top: 0.5em;
+            @extend %button-style; 
+            &:hover {
+                @extend %hover-button-style; 
+            }
+            &:disabled {
+                opacity: 0.5; 
+                &:hover {
+                    @extend %button-style; 
+                }
+            }
+          }
+        }
+    }      
+    #profiles {
+        margin-top: 1em; 
+        display: flex; 
+        flex-flow: row wrap; 
+        justify-content: flex-start; 
+        .profile {
+            background-color: $highlight-color; 
+            padding: 1em; 
+            margin: 0.5em; 
+        }
+    }
+}

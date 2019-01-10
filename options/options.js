@@ -1,6 +1,16 @@
 // showing the profiles already stored in options
 $(function() {
+	$("input[type=submit]").attr("disabled", "disabled");
 	showProfiles(); 
+
+	// add an event listener to name input to see if all fields are filled
+	$("input[name=title]").change(function(){
+		let allEntriesValid = true; 
+		if ($("input[name=title]").val().length === 0) allEntriesValid = false; 
+
+		// validated 
+		allEntriesValid ? $("input[type=submit]").removeAttr("disabled") : $("input[type=submit]").attr("disabled", "disabled");; 
+	}); 
 }); 
 
 // initializing timepicker 
@@ -21,6 +31,8 @@ var timepickers = $('.timepicker').wickedpicker(options);
 
 // store information upon submit 
 $("#addProf").submit(function(e) {
+
+
 	let entry = $(this).serializeArray()
 	let title = entry[0].value; 
 	let timeData = [entry[1].value, entry[2].value]; 
@@ -44,7 +56,7 @@ var showProfiles = function() {
 }
 
 var addProfile = function(nameInput, startTime, endTime) {
-	if (false /*keys.includes(nameInput)*/) {
+	if (false /*keys.includes(nameInput)*/) { // for editing already-established classes
 	} else {
 		let profile = document.createElement("DIV");
 		profile.className = "profile"; 

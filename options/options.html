@@ -1,18 +1,20 @@
 <!DOCTYPE html>
   <html>
     <head>
-        <link rel="stylesheet" href="../styles/options.css">
+        <link rel="stylesheet" href="../styles/main.css">
         <link rel="stylesheet" href="wickedpicker/dist/wickedpicker.min.css">
     </head>
     <body>
-        <form id="addProf">
-            Title: <input type="text" name="title" value="Mickey"><br>
-            Start Time: <input type="text" name="start" class="timepicker"></br>
-            End Time: <input type="text" name="end" class="timepicker"></br>
-            <input type="submit" value="Submit">
-        </form> 
-        <div id="profiles">
+        <div class="container">
+            <form id="addProf">
+                <span>Title <input type="text" name="title"></span><br>
+                <span>Start Time <input type="text" name="start" class="timepicker"></span><br>
+                <span>End Time<input type="text" name="end" class="timepicker"></span><br>
+                <span><input type="submit" value="Submit"></span>
+            </form>
+            <div id="profiles">
 
+            </div>
         </div>
     </body>
     <script src="../jquery-3.3.1.js"></script>
