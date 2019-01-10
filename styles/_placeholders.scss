@@ -1,0 +1,7 @@
+%button-style {
+    @include buttonColors(white, $shadow-color, 2pt solid $shadow-color);
+}
+
+%hover-button-style {
+    @include buttonColors($shadow-color, transparent, 2pt solid $shadow-color);
+}

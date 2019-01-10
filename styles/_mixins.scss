@@ -1,0 +1,13 @@
+@mixin buttonColors ($text-color, $bg-color, $border-style...) {
+    color: $text-color;
+    background-color: $bg-color;
+    border: $border-style;
+}
+
+@mixin font-style($fam, $size, $color: black) {
+    font : {
+        family: $fam;
+        size: $size; 
+        color: $color; 
+    }
+}
