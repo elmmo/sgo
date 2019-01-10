@@ -1,5 +1,14 @@
-p {
-  background-color: red;
+#profiles {
+  margin-top: 1em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+#profiles .profile {
+  background-color: #85ff85;
+  padding: 1em;
+  margin: 0.5em;
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=options.css.map */

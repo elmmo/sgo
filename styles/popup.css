@@ -1,8 +1,17 @@
-.prof {
+#container {
+  width: 200px;
+  height: 200px;
+}
+#container span {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+#container span .prof {
   position: absolute;
   left: 50px;
 }
-.prof:before {
+#container span .prof:before {
   content: "";
   position: absolute;
   background-color: red;
@@ -14,14 +23,14 @@
   top: 3px;
 }
 
-#container {
-  width: 200px;
-  height: 200px;
+.active {
+  background-color: #00d000;
+  box-shadow: 0 0 10px #00d000, 0 0 2px #000000;
 }
-#container span {
-  display: block;
-  width: 20px;
-  height: 20px;
+
+.inactive {
+  background-color: red;
+  box-shadow: 0 0 10px #FF0000, 0 0 2px #000000;
 }
 
 /*# sourceMappingURL=popup.css.map */
