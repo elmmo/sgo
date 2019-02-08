@@ -1,26 +1,26 @@
 @import url("https://fonts.googleapis.com/css?family=Hind");
-.container #addProf input[type=submit]:disabled:hover, .container #addProf input[type=submit] {
+#optionsContainer #addProf input[type=submit]:disabled:hover, #optionsContainer #addProf input[type=submit] {
   color: white;
   background-color: #004772;
   border: 2pt solid #004772;
 }
 
-.container #addProf input[type=submit]:hover {
+#optionsContainer #addProf input[type=submit]:hover {
   color: #004772;
   background-color: transparent;
   border: 2pt solid #004772;
 }
 
-.container {
+#optionsContainer {
   font-family: "Hind";
   font-size: 1.4em;
   font-color: black;
 }
-.container #addProf span {
+#optionsContainer #addProf span {
   position: relative;
   left: 1.3em;
 }
-.container #addProf input {
+#optionsContainer #addProf input {
   padding: 1em;
   margin: 0.5em;
   border: 1pt solid #004772;
@@ -28,43 +28,43 @@
   font-size: 1em;
   font-color: black;
 }
-.container #addProf input:focus {
+#optionsContainer #addProf input:focus {
   outline: 0;
 }
-.container #addProf input[type=submit] {
+#optionsContainer #addProf input[type=submit] {
   position: relative;
   left: -0.5em;
   top: 0.5em;
 }
-.container #addProf input[type=submit]:disabled {
+#optionsContainer #addProf input[type=submit]:disabled {
   opacity: 0.5;
 }
-.container #profiles {
+#optionsContainer #profiles {
   margin-top: 1em;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
 }
-.container #profiles .profile {
+#optionsContainer #profiles .profile {
   background-color: #85ff85;
   padding: 1em;
   margin: 0.5em;
 }
 
-#container {
-  width: 200px;
+#popupContainer {
+  width: 500px;
   height: 200px;
 }
-#container span {
+#popupContainer span {
   display: block;
   width: 20px;
   height: 20px;
 }
-#container span .prof {
+#popupContainer .prof {
   position: absolute;
   left: 50px;
 }
-#container span .prof:before {
+#popupContainer .prof:before {
   content: "";
   position: absolute;
   background-color: red;
@@ -77,13 +77,35 @@
 }
 
 .active {
+  position: absolute;
+  left: 50px;
+}
+.active:before {
+  content: "";
+  position: absolute;
   background-color: #00d000;
-  box-shadow: 0 0 10px #00d000, 0 0 2px #000000;
+  width: 8px;
+  height: 8px;
+  border-radius: 360px;
+  box-shadow: 0 0 10px #FF0000, 0 0 2px #000000;
+  left: -16px;
+  top: 3px;
 }
 
 .inactive {
-  background-color: red;
+  position: absolute;
+  left: 50px;
+}
+.inactive:before {
+  content: "";
+  position: absolute;
+  background-color: #FF0000;
+  width: 8px;
+  height: 8px;
+  border-radius: 360px;
   box-shadow: 0 0 10px #FF0000, 0 0 2px #000000;
+  left: -16px;
+  top: 3px;
 }
 
 /*# sourceMappingURL=main.css.map */
