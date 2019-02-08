@@ -5,7 +5,7 @@
     "permissions": ["storage", "tabs", "cookies", "*://*.whitworth.edu/*"],
     "options_page": "options/options.html",
     "browser_action": {
-      "default_popup": "popup.html"
+      "default_popup": "popup/popup.html"
     },
     "background": {
         "scripts": ["background.js"],

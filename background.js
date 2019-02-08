@@ -1,4 +1,4 @@
-
+// remove self serv cookies
 
 // Prevents old cookies from creating errors within the auth system
 chrome.runtime.onMessage.addListener(

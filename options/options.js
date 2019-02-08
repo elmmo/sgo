@@ -31,8 +31,6 @@ var timepickers = $('.timepicker').wickedpicker(options);
 
 // store information upon submit 
 $("#addProf").submit(function(e) {
-
-
 	let entry = $(this).serializeArray()
 	let title = entry[0].value; 
 	let timeData = [entry[1].value, entry[2].value]; 
