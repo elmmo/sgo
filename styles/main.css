@@ -52,7 +52,7 @@
 }
 
 #popupContainer {
-  width: 500px;
+  width: 200px;
   height: 200px;
 }
 #popupContainer span {
@@ -61,8 +61,10 @@
   height: 20px;
 }
 #popupContainer .prof {
-  position: absolute;
-  left: 50px;
+  position: relative;
+  left: 35px;
+  white-space: nowrap;
+  margin: 0;
 }
 #popupContainer .prof:before {
   content: "";
@@ -71,14 +73,16 @@
   width: 8px;
   height: 8px;
   border-radius: 360px;
-  box-shadow: 0 0 10px #FF0000, 0 0 2px #000000;
+  box-shadow: 0 0 10px red, 0 0 3px #000000;
   left: -16px;
   top: 3px;
 }
 
 .active {
-  position: absolute;
-  left: 50px;
+  position: relative;
+  left: 35px;
+  white-space: nowrap;
+  margin: 0;
 }
 .active:before {
   content: "";
@@ -87,14 +91,16 @@
   width: 8px;
   height: 8px;
   border-radius: 360px;
-  box-shadow: 0 0 10px #FF0000, 0 0 2px #000000;
+  box-shadow: 0 0 10px #00d000, 0 0 3px #000000;
   left: -16px;
   top: 3px;
 }
 
 .inactive {
-  position: absolute;
-  left: 50px;
+  position: relative;
+  left: 35px;
+  white-space: nowrap;
+  margin: 0;
 }
 .inactive:before {
   content: "";
@@ -103,7 +109,7 @@
   width: 8px;
   height: 8px;
   border-radius: 360px;
-  box-shadow: 0 0 10px #FF0000, 0 0 2px #000000;
+  box-shadow: 0 0 10px #FF0000, 0 0 3px #000000;
   left: -16px;
   top: 3px;
 }
