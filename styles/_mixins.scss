@@ -13,8 +13,10 @@
 }
 
 @mixin status-style($color) {
-    position: absolute; 
-    left: 50px; 
+    position: relative; 
+    left: 35px; 
+    white-space: nowrap; 
+    margin: 0; 
     &:before {
         content: ""; 
         position: absolute; 
@@ -22,8 +24,8 @@
         width: 8px; 
         height: 8px; 
         border-radius: 360px; 
-        box-shadow: 0 0 10px #FF0000,
-                    0 0 2px #000000;
+        box-shadow: 0 0 10px $color,
+                    0 0 3px #000000;
         left: -16px; 
         top: 3px; 
     }
